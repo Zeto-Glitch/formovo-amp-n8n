@@ -1,6 +1,8 @@
 Meta.DisplayName=n8n (Formovo, native 2.x)
 Meta.Description=n8n 2.x for AMP Generic on native Ubuntu/Debian (npm). Not compatible with n8n 3.x.
 Meta.OS=Linux
+Meta.AarchSupport=Unknown
+Meta.DisplayImageSource=none:
 Meta.Arch=x86_64
 Meta.Author=Formovo local template
 Meta.URL=https://n8n.io
@@ -10,7 +12,7 @@ Meta.ConfigRoot=n8n.kvp
 Meta.MinAMPVersion=2.6.2.6
 Meta.ContainerPolicy=NotSupported
 Meta.ExtraContainerPackages=[]
-Meta.ConfigVersion=1
+Meta.ConfigVersion=3
 Meta.AppConfigId=b8fab40e-f4dd-46d1-9201-f3458da91bbf
 App.DisplayName=n8n
 App.RootDir=./n8n/
