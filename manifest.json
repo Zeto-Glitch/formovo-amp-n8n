@@ -1,10 +1,10 @@
 {
   "id": "6c2dcc1d-26a9-4f6a-bef3-6eb9e9314641",
   "authors": [
-    "Formovo (custom local template)"
+    "Formovo"
   ],
-  "origin": "local",
-  "url": "https://github.com/CubeCoders/AMPTemplates",
+  "origin": "https://github.com/Zeto-Glitch/formovo-amp-n8n.git",
+  "url": "https://github.com/Zeto-Glitch/formovo-amp-n8n",
   "imagefile": "",
   "prefix": "FORMOVO",
   "repotype": "AppTemplates"
