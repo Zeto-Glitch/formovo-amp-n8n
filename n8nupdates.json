@@ -1,16 +1,16 @@
 [
   {
-    "UpdateStageName": "Create persistent data directory",
+    "UpdateStageName": "Prepare persistent data",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "CreateDirectory",
     "UpdateSourceArgs": "{{$FullBaseDir}}data"
   },
   {
-    "UpdateStageName": "Install/update n8n 2.x from npm",
+    "UpdateStageName": "Download n8n image 3.0.0",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
-    "UpdateSourceData": "/usr/bin/npm",
-    "UpdateSourceArgs": "install --prefix \"{{$FullBaseDir}}\" --no-audit --no-fund --save-exact n8n@{{N8NVersion}}",
+    "UpdateSourceData": "/usr/bin/podman",
+    "UpdateSourceArgs": "pull docker.n8n.io/n8nio/n8n:3.0.0",
     "SkipOnFailure": false
   }
 ]

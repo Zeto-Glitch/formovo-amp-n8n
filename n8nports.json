@@ -2,8 +2,8 @@
   {
     "Protocol": "TCP",
     "Port": 5678,
-    "Name": "n8n HTTP port",
-    "Description": "Port aplikacji n8n; zalecany reverse proxy z HTTPS",
+    "Name": "n8n HTTP (localhost only)",
+    "Description": "Internal n8n port routed to localhost",
     "Ref": "ServerPort"
   }
 ]
