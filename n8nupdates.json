@@ -6,11 +6,21 @@
     "UpdateSourceArgs": "{{$FullBaseDir}}data"
   },
   {
-    "UpdateStageName": "Download n8n image 3.0.0",
+    "UpdateStageName": "Install n8n launcher",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://raw.githubusercontent.com/Zeto-Glitch/formovo-amp-n8n/main/start-n8n.sh",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": false,
+    "SkipOnFailure": false,
+    "UpdateSourceArgs": "start-n8n.sh"
+  },
+  {
+    "UpdateStageName": "Download n8n image 2.47.7",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
     "UpdateSourceData": "/usr/bin/podman",
-    "UpdateSourceArgs": "pull docker.n8n.io/n8nio/n8n:3.0.0",
+    "UpdateSourceArgs": "pull ghcr.io/n8n-io/n8n:2.47.7",
     "SkipOnFailure": false
   }
 ]
