@@ -1,0 +1,16 @@
+[
+  {
+    "UpdateStageName": "Create persistent data directory",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "CreateDirectory",
+    "UpdateSourceArgs": "{{$FullBaseDir}}data"
+  },
+  {
+    "UpdateStageName": "Install/update n8n 2.x from npm",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/usr/bin/npm",
+    "UpdateSourceArgs": "install --prefix \"{{$FullBaseDir}}\" --no-audit --no-fund --save-exact n8n@{{N8NVersion}}",
+    "SkipOnFailure": false
+  }
+]

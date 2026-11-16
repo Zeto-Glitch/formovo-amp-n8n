@@ -1,0 +1,9 @@
+[
+  {
+    "Protocol": "TCP",
+    "Port": 5678,
+    "Name": "n8n HTTP port",
+    "Description": "Port aplikacji n8n; zalecany reverse proxy z HTTPS",
+    "Ref": "ServerPort"
+  }
+]
